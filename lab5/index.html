@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <title>Bootstrap demo</title>
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.x3dom.org/x3dom/release/x3dom.css">
+  <script src="https://www.x3dom.org/x3dom/release/x3dom.js"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body id="bodyColor">
+  <!-- A grey horizontal navbar that becomes vertical on small screens (Logo and nav bar)-->
+  <nav id = "headerColor" class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+    <div class="container">
+
+      <div class="logo">
+        <a class="navbar-brand" href="index.html">
+          <h1>1</h1>
+          <h1>oca</h1>
+          <h2>Cola</h2>
+          <h3>Journey</h3>
+          <p>Refreshing the world, one story at a time</p>
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Links -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+              title="About Web 3D Applications" data-bs-content="3D Apps is a Final Year Module">About</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" id="navbardrop" data-bs-toggle="dropdown"
+              aria-expanded="false">Drinks</a>
+            <div class="dropdown-menu dropdown-menu-end">
+              <a class="dropdown-item" href="javascript:swap('coke')">Coca Cola</a>
+              <a class="dropdown-item" href="javascript:swap('sprite')">Sprite</a>
+              <a class="dropdown-item" href="javascript:swap('pepper')">Dr Pepper</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+              title="3D App Contact Details" data-bs-content="Praveenan Mathew Email:prm24@sussex.ac.uk">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container main_contents">
+    <!-- Home page block element -->
+    <div id="home">
+      <div class="row"> <!-- Main_3D Image or Carousel -->
+        <div class="col-sm-12">
+          <div id="main_3d_image">
+            <div id="main_text" class="col-xs-12 col-sm-4">
+              <h2>Coca Cola Great Britain</h2>
+              <h3>Founded by Dr John S Pemberton</h3>
+              <p>The Coca Cola Company is the world's leading manufacturer, marketer and distributor of non-alcoholic
+                beverage concentrates and syrups, and produces nearly 400 brands.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row of cards on the grid -->
+      <div class="row">
+        <!--Coca Cola Column-->
+
+        <div class="col-sm-4">
+          <div class="card">
+            <a href="javascript:swap('coke')">
+              <img class="card-img-top img-fuild img-thumbnail" src="assets\images\coca_cola.jpg" alt="Coca Cola">
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">Coca Cola</h3>
+              <p class="card-text">It was 1886, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity.
+                One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, the mixture was
+                combined with carbonated water and sampled by customers who all agreed - this new drink was something
+                special! </p>
+              <a href="#" class="btn btn-primary">Find out more ...</a>
+            </div>
+          </div>
+        </div>
+
+        <!--Sprite Column-->
+
+        <div class="col-sm-4">
+          <div class="card">
+            <a href="javascript:swap('sprite')">
+              <img class="card-img-top img-fuild img-thumbnail" src="assets\images\sprite.jpg" alt="Sprite">
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">Sprite</h3>
+              <p class="card-text">First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's
+                leading lemon
+                and lime flavoured soft drink and is sold in more than 190 different countries. Sprite Zero, part of our
+                no sugar Zero range,
+                offers the delicious lemon lime taste of Sprite without the sugar or calories. </p>
+              <a href="#" class="btn btn-primary">Find out more ...</a>
+            </div>
+          </div>
+        </div>
+
+        <!--Dr Pepper Column-->
+
+        <div class="col-sm-4">
+          <div class="card">
+            <a href="javascript:swap('pepper')">
+              <img class="card-img-top img-fuild img-thumbnail" src="assets\images\dr_pepper.jpg" alt="Dr Pepper">
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">Dr Pepper</h3>
+              <p class="card-text">Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well
+                over
+                a century and it's still the same,
+                with that distinctive flavour you just can't quite put your tongue on. It was created by Texas
+                pharmacist
+                Charles Alderton in 1885. </p>
+              <a href="#" class="btn btn-primary">Find out more ...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Home page -->
+
+    <!-- Coke page -->
+    <!--<div id="coke" class="container-fluid main_contents" stylee="display: none;"> -->
+    <div id="coke" style="display: none;">
+      <!-- Row to hold two cards to hold 1) the X3D model and 2) the gallery -->
+      <div class="row">
+        <!-- Column to holds the X3D Model-->
+        <div class="col-sm-9">
+          <div class="card text-left">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="javascript:swap('coke')">Coke</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:swap('sprite')">Sprite</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="javascript:swap('pepper')">Dr Pepper</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Bootstarp 5 card body to hold info about the X3D model-->
+            <div class="card-body">
+              <h5 class="card-title">Coca Cola Can X3D Model</h5>
+
+              <!-- Place the X3d code here-->
+              <!-- Temporary image instead of-->
+              <div class="model3D">
+                <x3d>
+                  <scene>
+                    <inline url="assets\Web-S2\x3D\Can_T6.x3d"> </inline>
+                    <background transparency="0.9" />
+                  </scene>
+                </x3d>
+              </div>
+
+              <p class="card-text">This model was created in Blender</p>
+              <h5 class="card-subtitle">Camera Views</h5>
+              <div class="camera-btns">
+                <p class="card-text">These buttons select a range of X3D model viewpoints</p>
+                <div class="btn-group">
+                  <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
+                  <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
+                  <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
+                  <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
+                  <a href="#" class="btn btn-warning btn-responsive camera-font">Top</a>
+                  <a href="#" class="btn btn-outline-dark disabled btn-responsive camera-font">Off</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column to hold 3D Image Gallery-->
+        <div class="col-sm-3">
+          <div class="card text-left">
+            <div class="card-header gallery-header">
+              Gallery
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">3D Image Gallery</h4>
+              <div class="gallery" id="gallery_coke"></div>
+              <p class="card-text">3D images rendered in Blender</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Row to hold 1 card to hold the coca cola descriptive text,ect.-->
+
+      <div class="row">
+        <!--Coca Cola Column-->
+
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Coca Cola</h3>
+              <p class="card-text">On May 8, 1886, Dr. John Pemberton sold the first glass of Coca-Cola at Jacobs'
+                Pharmacy in downtown Atlanta. Serving nine drinks per day in its first year, Coca-Cola was new
+                refreshment in its beginning.
+                See the story here of how it all began. </p>
+              <p class="card-text">
+                The product that has given the world its best-known taste was born in Atlanta, Georgia, on May 8, 1886.
+                Dr. John Stith Pemberton, a local pharmacist, produced the syrup for Coca-Cola, and carried a jug of the
+                new product down the street to Jacobs'
+                Pharmacy, where it was sampled, pronounced "excellent" and placed on sale for five cents a glass as a
+                soda fountain drink.
+                Carbonated water was teamed with the new syrup to produce a drink that was at once
+                "Delicious and Refreshing," a theme that continues to echo today wherever Coca-Cola is enjoyed. </p>
+              <a href="https://www.coca-cola.co.uk/brands/coca-cola-original-taste" class="btn btn-primary">Find out
+                more
+                ...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Coke page end -->
+
+    <!-- Sprite page -->
+    <!--<div id="sprite" class="container-fluid main_contents" style="display: none;">-->
+    <div id="sprite" style="display: none;">
+
+      <div class="row">
+        <!-- Column to holds the X3D Model-->
+        <div class="col-sm-9">
+          <div class="card text-start">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="javascript:swap('coke')">Coke</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="javascript:swap('sprite')">Sprite</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="javascript:swap('pepper')">Dr Pepper</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Bootstarp 5 card body to hold info about the X3D model-->
+            <div class="card-body">
+              <h5 class="card-title">Sprite Bottle X3D Model</h5>
+
+              <!-- Place the X3d code here-->
+              <!-- Temporary image instead of-->
+              <div class="model3D">
+                <x3d>
+                  <scene>
+                    <inline url="assets\Web-S2\x3D\bottle10.x3d"> </inline>
+                    <background transparency="0.9" />
+                  </scene>
+                </x3d>
+              </div>
+
+              <p class="card-text">This model was created in Blender</p>
+              <h5 class="card-subtitle">Camera Views</h5>
+              <div class="camera-btns">
+                <p class="card-text">These buttons select a range of X3D model viewpoints</p>
+                <div class="btn-group">
+                  <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
+                  <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
+                  <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
+                  <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
+                  <a href="#" class="btn btn-warning btn-responsive camera-font">Top</a>
+                  <a href="#" class="btn btn-outline-dark disabled btn-responsive camera-font">Off</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column to hold 3D Image Gallery-->
+        <div class="col-sm-3">
+          <div class="card text-start">
+            <div class="card-header gallery-header">
+              Gallery
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">3D Image Gallery</h4>
+              <div class="gallery" id="gallery_sprite"></div>
+              <p class="card-text">3D images rendered in Blender</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row to hold 1 card to hold the coca cola descriptive text,ect.-->
+
+      <div class="row">
+        <!--Sprite Column-->
+
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Sprite</h3>
+              <p class="card-text">First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's
+                leading lemon
+                and lime flavoured soft drink and is sold in more than 190 different countries. Sprite Zero, part of our
+                no sugar Zero range,
+                offers the delicious lemon lime taste of Sprite without the sugar or calories. </p>
+              <a href="https://www.coca-cola.co.uk/brands/sprite" class="btn btn-primary">Find out more ...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sprite page end-->
+
+    <!-- Pepper page -->
+    <!--<div id="pepper" class="container-fluid main_contents" style="display: none;"> -->
+    <div id="pepper" style="display: none;">
+
+      <div class="row">
+        <!-- Column to holds the X3D Model-->
+        <div class="col-sm-9">
+          <div class="card text-start">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="javascript:swap('coke')">Coke</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="javascript:swap('sprite')">Sprite</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="javascript:swap('pepper')">Dr Pepper</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Bootstarp 5 card body to hold info about the X3D model-->
+            <div class="card-body">
+              <h5 class="card-title">Dr Pepper Cup X3D Model</h5>
+
+              <!-- Place the X3d code here-->
+              <!-- Temporary image instead of-->
+              <div class="model3D">
+                <x3d>
+                  <scene>
+                    <inline url="assets\Web-S2\x3D\cup21.x3d"> </inline>
+                    <background transparency="0.9" />
+                  </scene>
+                </x3d>
+              </div>
+
+              <p class="card-text">This model was created in Blender</p>
+              <h5 class="card-subtitle">Camera Views</h5>
+              <div class="camera-btns">
+                <p class="card-text">These buttons select a range of X3D model viewpoints</p>
+                <div class="btn-group">
+                  <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
+                  <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
+                  <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
+                  <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
+                  <a href="#" class="btn btn-warning btn-responsive camera-font">Top</a>
+                  <a href="#" class="btn btn-outline-dark disabled btn-responsive camera-font">Off</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column to hold 3D Image Gallery-->
+        <div class="col-sm-3">
+          <div class="card text-start">
+            <div class="card-header gallery-header">
+              Gallery
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">3D Image Gallery</h4>
+
+              <div class="gallery" id="gallery_pepper"></div>
+              <p class="card-text">3D images rendered in Blender</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Row to hold 1 card to hold the coca cola descriptive text,ect.-->
+
+      <div class="row">
+        <!--Coca Cola Column-->
+
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Dr Pepper</h3>
+              <p class="card-text">Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well
+                over
+                a century and it's still the same,
+                with that distinctive flavour you just can't quite put your tongue on. It was created by Texas
+                pharmacist
+                Charles Alderton in 1885.
+                He gave a sample of the first ever batch to Wade Morrison, a local shop owner, and Mr Morrison instantly
+                agreed to stock the drink.
+                The distinctive, bold taste of Dr Pepper has been popular ever since. </p>
+              <a href="https://www.coca-cola.co.uk/brands/dr-pepper" class="btn btn-primary">Find out more ...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pepper page end -->
+
+
+  <!--3D App Footer-->
+  <nav id="footerColor" class="navbar navbar-expand footer">
+    <div class="container">
+      <div class="navbar-text float-left copyright">
+        <p><span class="align-baseline">&copy 2023 Mobile Web 3D Applications | <a href="javascript:changeLook()">Restyle</a> | <a href="javascript:changeBack()">Reset</a></span></p>
+      </div>
+      <div class="navbar-text float-right social">
+        <a href="#"><i class="fab fa-facebook-square fa-2x" style="font-size: 20px;color:red"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x" style="font-size: 20px;color:green"></i></a>
+        <a href="#"><i class="fab fa-google-plus fa-2x" style="font-size: 20px;color:blue"></i></a>
+        <a href="#"><i class="fab fa-github-square fa-2x" style="font-size: 20px;color:yellow"></i></a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--My 3D App models-->
+  <!--Contact Models-->
+  <!--The models-->
+  <div class="modal fade" id="contactModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">3D App Contact Details</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>Praveenan Mathew, University of Sussex Email: prm24@sussex.ac.uk</p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
+  <script src="js/custom.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
+
+  <!-- JavaScript to swap for SPA and restyle -->
+  <script src="scripts/js/swap_restyle.js"></script>
+
+  <!-- JavaScript and PHP based Gallery generator  -->
+  <script src="scripts/js/gallery_generator.js"></script>
+
+
+
+</body>
+
+</html>
